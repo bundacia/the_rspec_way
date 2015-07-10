@@ -1,18 +1,9 @@
-# -----------------
-# Before you go...
-# -----------------
-RSpec.describe Item do
-
-  before(:each) do
-    Factory.build :item, name: 'Chocolate'
-    Factory.build :item, name: 'Peanut Butter'
-  end
-
-  describe '.search' do
-    it 'can lookup by name' do
-      matching_deals = Item.search 'Chocolate'
-      expect(matching_deals.count).to eq 1
-    end
-  end
-
-end
+#   ___                  _   _                ___
+#  / _ \ _   _  ___  ___| |_(_) ___  _ __  __|__ \
+# | | | | | | |/ _ \/ __| __| |/ _ \| '_ \/ __|/ /
+# | |_| | |_| |  __/\__ \ |_| | (_) | | | \__ \_|
+#  \__\_\\__,_|\___||___/\__|_|\___/|_| |_|___(_)
+#
+#
+# @bundacia
+# trevor.little [at] livingsocial [dot] com

@@ -1,16 +1,17 @@
 # -----------------
-# I want it NOW!
+# Before you go...
 # -----------------
 RSpec.describe Item do
 
-  let!(:chocolate    ) { Factory.build :item, name: 'Chocolate' }
-  let!(:peanut_butter) { Factory.build :item, name: 'Peanut Butter' }
+  before(:each) do
+    Factory.build :item, name: 'Chocolate'
+    Factory.build :item, name: 'Peanut Butter'
+  end
 
   describe '.search' do
     it 'can lookup by name' do
-      matching_deals = described_class.search 'Chocolate'
-      expect(matching_deals).to     include chocolate
-      expect(matching_deals).to_not include peanut_butter
+      matching_deals = Item.search 'Chocolate'
+      expect(matching_deals.count).to eq 1
     end
   end
 
