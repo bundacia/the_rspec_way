@@ -4,7 +4,7 @@ These are the resources used in my RubyJax talk on July 9th, 2015
 
 They've been adapted to allow you to run the code locally.
 
-When you run the tests you shoudl see them all pass except example 25 which is being intentionally skipped.
+When you run the tests you should see them all pass except example 25 which is being intentionally skipped.
 
 ```
 % rspec
@@ -21,3 +21,5 @@ Finished in 0.01011 seconds (files took 0.19925 seconds to load)
 47 examples, 0 failures, 1 pending
 
 ```
+
+A few classes have been stubbed out to make the rest of the tests pass.

@@ -14,6 +14,4 @@ RSpec.describe Item do
     end
   end
 
-  # Find the BUG!
-
 end
